@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- my custom css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <form action="">
+            <h2>Registration</h2>
+            <div class="Details-main__Container">
+                <div id="personalandidentity-detailscontainer">
+                    <div id="personal-details__container ">
+                        <h3>Personal Details</h3>
+                        <div class="Details-container">
+                            <div>
+                                <label for="">Full Name</label>
+                                <input type="text" id="nameinput" placeholder="Enter your name" required>
+                            </div>
+                            <div>
+                                <label for="">Date of Birth</label>
+                                <input type="date" required>
+                            </div>
+                            <div>
+                                <label for="">Email</label>
+                                <input type="email" placeholder="Enter your email" required>
+                            </div>
+                            <div>
+                                <label for="">Mobile Number</label>
+                                <input type="tel" placeholder="Enter mobile number" pattern="^\d{10}$" required>
+                            </div>
+                            <div>
+                                <label for="">Gender</label>
+                                <input type="text" placeholder="Enter your gender" required>
+                            </div>
+                            <div>
+                                <label for="">Occupation</label>
+                                <input type="text" placeholder="Enter your occupation" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Identity-details__container">
+                        <h3>Identity Details</h3>
+                        <div class="Details-container">
+                            <div>
+                                <label for="">ID type</label>
+                                <input type="text" placeholder="Enter id type" required>
+                            </div>
+                            <div>
+                                <label for="">ID Number</label>
+                                <input type="text" placeholder="Enter id number" required>
+                            </div>
+                            <div>
+                                <label for="">Issue Authority</label>
+                                <input type="text" placeholder="Enter issue authority" required>
+                            </div>
+                            <div>
+                                <label for="">Issued State</label>
+                                <input type="text" placeholder="Enter issued state" required>
+                            </div>
+                            <div>
+                                <label for="">Issued Date</label>
+                                <input type="date" placeholder="Enter issued date" required>
+                            </div>
+                            <div>
+                                <label for="">Expiry Date</label>
+                                <input type="date" placeholder="Enter expiry date" required>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button type="button" id="next-button" >
+                        <div>
+                            <p>Next</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </button>
+                </div>
+                <!-- Address and family details start -->
+                <div id="addressandfamily-detailscontainer" class="defaultnone">
+                    <div id="address-details__container ">
+                        <h3>Address Details</h3>
+                        <div class="Details-container">
+                            <div>
+                                <label for="text">Address type</label>
+                                <input type="text" placeholder="Permanent or Temporary" required>
+                            </div>
+                            <div>
+                                <label for="">Nationality</label>
+                                <input type="text" placeholder="Enter your nationality" required>
+                            </div>
+                            <div>
+                                <label for="">State</label>
+                                <input type="text" placeholder="Enter your state" required>
+                            </div>
+                            <div>
+                                <label for="">District</label>
+                                <input type="text" placeholder="Enter your district" required>
+                            </div>
+                            <div>
+                                <label for="">Block Number</label>
+                                <input type="number" placeholder="Enter block number" required>
+                            </div>
+                            <div>
+                                <label for="">Ward Number</label>
+                                <input type="text" placeholder="Enter ward number" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="family-details__container ">
+                        <h3>Family Details</h3>
+                        <div class="Details-container">
+                            <div>
+                                <label for="">Father Name</label>
+                                <input type="text" placeholder="Enter Father Name" required>
+                            </div>
+                            <div>
+                                <label for="">Mother Name</label>
+                                <input type="text" placeholder="Enter mother name" required>
+                            </div>
+                            <div>
+                                <label for=""> Grandfather name </label>
+                                <input type="text" placeholder="Enter grandfather name" required>
+                            </div>
+                            <div>
+                                <label for="">Spouse name</label>
+                                <input type="text" placeholder="Enter spouse name" required>
+                            </div>
+                            <div>
+                                <label for="">Father in law </label>
+                                <input type="text" placeholder="father in law name" required>
+                            </div>
+                            <div>
+                                <label for="">Mother in law name</label>
+                                <input type="text" placeholder="Mother in law name" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" id="back-button" >
+                        <div>
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <P>Back</P>
+                        </div>
+                    </button>
+                    <button type="submit" id="submit-button" >
+                        <P>Submit</P>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
