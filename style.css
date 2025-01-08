@@ -87,7 +87,7 @@ form button p{
 }
 form #submit-button{
    margin-left: 5%;
-   /* padding-left: 90px; */
+ 
 }
 form button:hover {
     background-color: rgb(69 ,111, 231,0.85);
@@ -126,4 +126,9 @@ form button:hover {
     form #submit-button{
         margin: 14px 0px 0px 0px;
     }    
+    .Details-main__Container h3 {
+        margin: 26px 0px 2px 0px;
+        font-weight: 500;
+        font-size: 20px;
+}
 }
